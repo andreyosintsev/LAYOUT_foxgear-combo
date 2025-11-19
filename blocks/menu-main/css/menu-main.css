@@ -1,0 +1,68 @@
+.menu-main {
+    color: var(--text-color, #3B3B3B);
+    font-family: var(--text-family, sans-serif);
+    font-size: var(--text-size-menu, 17px);
+    font-weight: var(--text-weight-main, 500);
+}
+
+.menu-main__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+
+    list-style: none;
+    flex-wrap: nowrap;
+}
+
+.menu-main__item {
+    position: relative;
+    margin-right: 34px;
+}
+
+.menu-main__item:last-child {
+    margin-right: 0;
+}
+
+.menu-main__link {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 4px; /* небольшое расстояние под линию */
+    text-decoration: none;
+
+    color: var(--text-color, #000);
+    font-size: 18px;
+}
+
+/* Градиентная линия */
+.menu-main__link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+
+    width: 100%;
+    height: 3px;
+
+    background-image: linear-gradient(
+        to right,
+        var(--purple, #E5087F),
+        var(--navy, #502A84)
+    );
+
+    opacity: 0;
+    transform: scaleX(0);
+    transform-origin: left center;
+
+    transition:
+        opacity 0.25s ease,
+        transform 0.25s ease;
+}
+
+/* При наведении — плавное проявление градиентного подчёркивания */
+.menu-main__link:hover::after {
+    opacity: 1;
+    transform: scaleX(1);
+}
+

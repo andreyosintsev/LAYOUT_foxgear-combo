@@ -13,25 +13,28 @@
     Основная палитра
 */
     
-    --gray-dark:                #3B3B3B; /* main text */
+    --gray-darker:              #3B3B3B; /* main text */
+    --gray-dark:                #585858; /* main text */
     --gray:                     #777777; /* block background */  
     --gray-light:               #F7F7F7; /* block background */  
     --white:                    #FFFFFF; /* background, button text */
 
     --purple:                   #E5087F; /* gradient start*/
+    --purple-light:             #F03A9B; /* gradient start on hover*/
     --navy:                     #502A84; /* gradient end*/
+    --navy-light:               #6C47A3; /* gradient end on hover*/
 
 
 /*
     Шрифты
 */
 
-    --text-color:                var(--gray-dark);
+    --text-color:                var(--gray-darker);
 
     --text-family:               Inter, arial, sans-serif;
 
     --text-size-menu:                   17px;
-    --text-size-button:                 17px;
+    --text-size-button:                 18px;
     --text-size-main-title:             44px;
     --text-size-main-subtitle:          23px;
     --text-size-main:                   18px;
@@ -41,7 +44,7 @@
     --text-weight-bold:                 600;
 
     --text-line-height-menu:            17px;
-    --text-line-height-button:          17px;
+    --text-line-height-button:          18px;
     --text-line-height-main-title:      54px;
     --text-line-height-main-subtitle:   24px;
     --text-line-height-main:            27px;
@@ -64,7 +67,6 @@
     Ссылки
 */
 
-    --link-color:                       var(--gray-dark);
+    --link-color:                       var(--gray-darker);
     --link-color_hover:                 var(--gray);
-
 }

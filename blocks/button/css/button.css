@@ -1,0 +1,72 @@
+.button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+    padding: 21px 44px;
+
+    color: var(--white, #FFFFFF);
+    font-family: var(--text-family, sans-serif);
+    font-size: var(--text-size-button, 18px);
+    font-weight: var(--text-weight-bold, 600);
+
+    line-height: var(--text-line-height-button, 18px);
+    text-align: center;
+
+    background-color: var(--purple, #E5087F);
+    background-image: -webkit-linear-gradient(left, var(--purple, #E5087F), var(--navy, #502A84));
+    background-image: -moz-linear-gradient(left, var(--purple, #E5087F), var(--navy, #502A84));
+    background-image: linear-gradient(to right, var(--purple, #E5087F), var(--navy, #502A84));
+
+    background-repeat: no-repeat;
+
+    border: none;
+    border-radius: var(--border-radius, 12px);
+
+    outline: none;
+
+    cursor: pointer;
+
+    transition: background-image 0.25s ease, background-color 0.25s ease;
+}
+
+.button::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    
+    background-image: linear-gradient(to right, var(--purple-light, #F03A9B), var(--navy-light, #6C47A3));
+
+    border-radius: var(--border-radius, 12px);
+    
+    opacity: 0;
+
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.button:hover::before {
+    opacity: 1;
+}
+
+.button__text {
+    position: relative;
+    z-index: 1;
+}
+
+.button_details {
+    background-color: var(--gray-darker, #3B3B3B);
+    background-image: linear-gradient(to right, var(--gray-darker, #3B3B3B), var(--gray-darker, #3B3B3B));
+}
+
+.button_details::before {
+    background-color: var(--gray-darker, #3B3B3B);
+    background-image: linear-gradient(to right, var(--gray-darker, #3B3B3B), var(--gray-darker, #3B3B3B));
+}
+
+.button_details:hover::before {
+    background-color: var(--gray-dark, #585858);
+    background-image: linear-gradient(to right, var(--gray-dark, #3B3B3B), var(--gray-dark, #585858));
+}
+
