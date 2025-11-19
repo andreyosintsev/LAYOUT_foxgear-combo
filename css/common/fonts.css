@@ -1,0 +1,14 @@
+/*Inter 500 Medium*/
+@font-face {
+    font-family: 'Inter';
+    font-weight: 500;
+    src: url(../../fonts/Inter-Medium.ttf) format("truetype");
+    font-display: swap;
+}
+/*Inter 600 Semi Bold*/
+@font-face {
+    font-family: 'Inter';
+    font-weight: 600;
+    src: url(../../fonts/Inter-SemiBold.ttf) format("truetype");
+    font-display: swap;
+}

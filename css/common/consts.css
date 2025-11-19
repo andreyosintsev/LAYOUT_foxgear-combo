@@ -1,0 +1,70 @@
+@import url("./fonts.css");
+
+:root {
+
+/*
+    Размеры экрана
+*/
+
+    --max-content-width:        1920px;
+    --wrapper-width:            1440px;
+
+/*
+    Основная палитра
+*/
+    
+    --gray-dark:                #3B3B3B; /* main text */
+    --gray:                     #777777; /* block background */  
+    --gray-light:               #F7F7F7; /* block background */  
+    --white:                    #FFFFFF; /* background, button text */
+
+    --purple:                   #E5087F; /* gradient start*/
+    --navy:                     #502A84; /* gradient end*/
+
+
+/*
+    Шрифты
+*/
+
+    --text-color:                var(--gray-dark);
+
+    --text-family:               Inter, arial, sans-serif;
+
+    --text-size-menu:                   17px;
+    --text-size-button:                 17px;
+    --text-size-main-title:             44px;
+    --text-size-main-subtitle:          23px;
+    --text-size-main:                   18px;
+    --text-size-block-title:            32px;
+
+    --text-weight-main:                 500;
+    --text-weight-bold:                 600;
+
+    --text-line-height-menu:            17px;
+    --text-line-height-button:          17px;
+    --text-line-height-main-title:      54px;
+    --text-line-height-main-subtitle:   24px;
+    --text-line-height-main:            27px;
+    --text-line-height-block-title:     42px;
+
+/*
+    Фоны
+*/
+
+    --background-color-page:            var(--white);
+    --background-color-block:           var(--gray-light);
+
+/*
+    Рамки
+*/
+
+    --border-radius:                    12px;
+
+/*
+    Ссылки
+*/
+
+    --link-color:                       var(--gray-dark);
+    --link-color_hover:                 var(--gray);
+
+}
