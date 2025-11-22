@@ -7,6 +7,7 @@ html::-webkit-scrollbar {
     width: 8px;
     height: 8px
 }
+
 body {
     color: var(--text-color-main, #000000);
     font-family: var(--text-family-main, sans-serif);
@@ -31,6 +32,28 @@ body {
     margin-bottom: 64px;
 }
 
+.hero {
+    margin-bottom: 64px;
+}
+
+.purpose {
+    margin-bottom: 64px;
+}
+
+@media screen and (max-width: 1440px) {
+    .main {
+        padding-top: 160px;
+    }
+
+    .hero {
+        margin-bottom: 40px;
+    }
+
+    .purpose {
+        margin-bottom: 40px;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .main {
         padding-top: 100px;
@@ -40,5 +63,15 @@ body {
 @media screen and (max-width: 768px) {
     .main {
         padding-top: 67px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        margin-bottom: 20px;
+    }
+
+    .purpose {
+        margin-bottom: 20px;
     }
 }
