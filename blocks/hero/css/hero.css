@@ -1,0 +1,130 @@
+.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    font-family: var(--text-family, sans-serif);
+    font-size: var(--text-size-main, 18px);
+    font-weight: var(--text-weight-main, 500);
+
+    line-height: 1.5;
+
+    background-color: var(--gray-lighter, #F7F7F7);
+    border-radius: var(--border-radius, 12px);
+
+    overflow: hidden;
+}
+
+.hero__item-text {
+    max-width: 57%;
+    padding: 20px clamp(20px, 21.7vw - 177px, 90px) 0;
+}
+
+.hero__title {
+    margin: 0 0 24px 0;
+
+    font-size: var(--text-size-main-title, 44px);
+    font-weight: var(--text-weight-bold, 600);
+
+    line-height: 1.2;
+
+    text-align: left;
+
+    hyphens: auto;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+.hero__subtitle {
+    position: relative;
+    display: inline;
+    padding: 0;
+
+    color: var(--purple, #E5087F);
+
+    font-size: var(--text-size-main-subtitle, 23px);
+    font-weight: var(--text-weight-bold, 600);
+
+    line-height: 1;
+
+
+
+    background: linear-gradient(to right,
+            var(--purple, #E5087F),
+            var(--navy, #502A84));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+@supports (-webkit-background-clip: text) {
+    .hero__subtitle {
+        color: transparent;
+    }
+}
+
+.hero__subtitle::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+
+    width: 100%;
+    height: 3px;
+
+    background-image: linear-gradient(to right,
+            var(--purple, #E5087F),
+            var(--navy, #502A84));
+}
+
+.hero__p {
+    margin: 44px 0 0;
+}
+
+.hero__image {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+
+    line-height: 0;
+
+    border-radius: var(--border-radius-flex, 12px);
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+
+        font-size: 16px;
+
+        line-height: 24px;
+    }
+
+    .hero__item-text {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .hero__title {
+        margin: 0 0 18px 0;
+
+        font-size: 34px;
+    }
+
+    .hero__subtitle {
+        font-size: 20px;
+    }
+
+    .hero__p {
+        margin: 24px 0 0;
+    }
+
+    .hero__image {
+        width: 100%;
+        max-width: 100%;
+    }
+}

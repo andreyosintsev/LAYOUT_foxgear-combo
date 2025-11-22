@@ -1,0 +1,32 @@
+.wrapper {
+    width: 100%;
+    max-width: var(--wrapper-width, 1440px);
+    margin: 0 auto;
+    padding: 0 124px;
+
+    background-color: var(--white, #FFFFFF);
+}
+
+@media screen and (max-width: 1440px) {
+    .wrapper {
+        max-width: 1440px;
+
+        padding: 0 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        max-width: 768px;
+
+        padding: 0 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .wrapper {
+        max-width: 480px;
+
+        padding: 0;
+    }
+}

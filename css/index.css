@@ -1,0 +1,44 @@
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+}
+
+html::-webkit-scrollbar {
+    width: 8px;
+    height: 8px
+}
+body {
+    color: var(--text-color-main, #000000);
+    font-family: var(--text-family-main, sans-serif);
+    font-size: var(--text-size-main, 14px);
+    font-weight: var(--text-weight-main, 300);
+
+    line-height: var(--text-line-height-main, 18px);
+
+    background-color: var(--background-color-main, #FFFFFF);
+}
+
+.hidden {
+    display: none !important;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.main {
+    padding-top: 181px;
+    margin-bottom: 64px;
+}
+
+@media screen and (max-width: 1024px) {
+    .main {
+        padding-top: 100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        padding-top: 67px;
+    }
+}

@@ -1,4 +1,6 @@
 .menu-main {
+    width: 100%;
+    
     color: var(--text-color, #3B3B3B);
     font-family: var(--text-family, sans-serif);
     font-size: var(--text-size-menu, 17px);
@@ -11,6 +13,7 @@
     justify-content: flex-start;
     align-items: center;
     height: 100%;
+    padding: 0;
 
     list-style: none;
     flex-wrap: nowrap;
@@ -28,14 +31,12 @@
 .menu-main__link {
     position: relative;
     display: inline-block;
-    padding-bottom: 4px; /* небольшое расстояние под линию */
+    padding-bottom: 4px; 
     text-decoration: none;
 
     color: var(--text-color, #000);
-    font-size: 18px;
 }
 
-/* Градиентная линия */
 .menu-main__link::after {
     content: "";
     position: absolute;
@@ -60,9 +61,32 @@
         transform 0.25s ease;
 }
 
-/* При наведении — плавное проявление градиентного подчёркивания */
+
 .menu-main__link:hover::after {
     opacity: 1;
     transform: scaleX(1);
 }
 
+@media screen and (max-width: 1024px) {
+    .menu-main {
+        font-size: 14px;
+    }
+
+    .menu-main__items {
+        justify-content: center;
+    }
+    
+    .menu-main__link {
+        padding-bottom: 0;
+    }
+    
+    .menu-main__link::after {
+        bottom: -2px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu-main {
+        display: none;
+    }
+}

@@ -70,3 +70,10 @@
     background-image: linear-gradient(to right, var(--gray-dark, #3B3B3B), var(--gray-dark, #585858));
 }
 
+@media screen and (max-width: 1024px) {
+    .button {
+        font-size: 14px;
+
+        padding: 10px 20px;
+    }    
+}

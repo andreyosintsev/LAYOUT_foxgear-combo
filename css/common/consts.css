@@ -15,8 +15,9 @@
     
     --gray-darker:              #3B3B3B; /* main text */
     --gray-dark:                #585858; /* main text */
-    --gray:                     #777777; /* block background */  
-    --gray-light:               #F7F7F7; /* block background */  
+    --gray:                     #777777; /*  */  
+    --gray-light:               #D8D8D8; /* header bottom line */  
+    --gray-lighter:             #F7F7F7; /* block background */  
     --white:                    #FFFFFF; /* background, button text */
 
     --purple:                   #E5087F; /* gradient start*/
@@ -55,7 +56,7 @@
 */
 
     --background-color-page:            var(--white);
-    --background-color-block:           var(--gray-light);
+    --background-color-block:           var(--gray-lighter);
 
 /*
     Рамки

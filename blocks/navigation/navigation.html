@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Block</title>
+    <link rel="stylesheet" href="../../css/common/normalize.css">
+    <link rel="stylesheet" href="../../css/common/consts.css">
+    <link rel="stylesheet" href="../logo/css/logo.css">
+    <link rel="stylesheet" href="../menu-main/css/menu-main.css">
+    <link rel="stylesheet" href="../button/css/button.css">
+    <link rel="stylesheet" href="css/navigation.css">
+</head>
+
+<body style="background-color: lime;">
+    <header class="navigation">
+        <div class="wrapper navigation__wrapper">
+            <div class="logo">
+                <a class="logo__link" href="#" title="FoxGear - эргономичное рабочее место">
+                    <img class="logo__image" src="../logo/images/logo.png" alt="Логотип FoxGear">
+                </a>
+            </div>
+            <nav class="menu-main">
+                <ul class="menu-main__items">
+                    <li class="menu-main__item">
+                        <a class="menu-main__link" href="#doctor" title="Доктор Воробьевский Владислав Игоревич">
+                            О докторе
+                        </a>
+                    </li>
+                    <li class="menu-main__item">
+                        <a class="menu-main__link" href="#profit" title="Рекомендации доктора Воробьевского">
+                            Рекомендации
+                        </a>
+                    </li>
+                    <li class="menu-main__item">
+                        <a class="menu-main__link" href="#photos" title="Продукция">
+                            Продукция
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="button button_apply" type="button">
+                <span class="button__text">Оставить заявку</span>
+            </button>
+            <div class="button-menu-mobile header__button-menu-mobile">
+                <svg aria-hidden="true" focusable="false" role="presentation" class="button-menu-mobile__icon"
+                    viewBox="0 0 64 64">
+                    <path class="button-menu-mobile__icon-line1" d="M7 15h51">.</path>
+                    <path class="button-menu-mobile__icon-line2" d="M7 32h43">.</path>
+                    <path class="button-menu-mobile__icon-line3" d="M7 49h51">.</path>
+                </svg>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>
