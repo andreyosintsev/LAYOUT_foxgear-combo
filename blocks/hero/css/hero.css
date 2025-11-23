@@ -19,7 +19,7 @@
 
 .hero__item-text {
     max-width: 57%;
-    padding: 20px clamp(20px, 21.7vw - 177px, 90px);
+    padding: 20px clamp(20px, calc(20px + 44 * (100vw - 768px) / 672), 64px);
 }
 
 .hero__title {

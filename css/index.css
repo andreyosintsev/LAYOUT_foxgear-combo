@@ -32,11 +32,7 @@ body {
     margin-bottom: 64px;
 }
 
-.hero {
-    margin-bottom: 64px;
-}
-
-.purpose {
+.block {
     margin-bottom: 64px;
 }
 
@@ -45,11 +41,7 @@ body {
         padding-top: 160px;
     }
 
-    .hero {
-        margin-bottom: 40px;
-    }
-
-    .purpose {
+    .block {
         margin-bottom: 40px;
     }
 }
@@ -67,11 +59,7 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    .hero {
-        margin-bottom: 20px;
-    }
-
-    .purpose {
+    .block {
         margin-bottom: 20px;
     }
 }
