@@ -29,8 +29,7 @@
 }
 
 .card-purpose__video {
-    
-    padding: 15px;
+    padding: 10px;
 
     background-color: var(--white, #FFFFFF);
     border-radius: 50%;
