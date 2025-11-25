@@ -27,6 +27,9 @@
     <link rel="stylesheet" href="blocks/card-purpose/css/card-purpose.css">
     <link rel="stylesheet" href="blocks/purpose/css/purpose.css">
     <link rel="stylesheet" href="blocks/gallery/css/gallery.css">
+    <link rel="stylesheet" href="blocks/rating/css/rating.css">
+    <link rel="stylesheet" href="blocks/card-product/css/card-product.css">
+    <link rel="stylesheet" href="blocks/card-combo/css/card-combo.css">
 
     <link rel="stylesheet" href="css/index.css">
 
@@ -78,8 +81,13 @@
                         </a>
                     </li>
                     <li class="menu-main__item">
-                        <a class="menu-main__link" href="#photos" title="Продукция">
+                        <a class="menu-main__link" href="#products" title="Продукция">
                             Продукция
+                        </a>
+                    </li>
+                    <li class="menu-main__item">
+                        <a class="menu-main__link" href="#combo" title="Продукция">
+                            Рабочее место
                         </a>
                     </li>
                 </ul>
@@ -159,7 +167,7 @@
     <main class="main">
         <div class="wrapper">
 
-            <div class="hero block">
+            <div class="hero block" id="doctor">
                 <div class="hero__item-text">
                     <h2 class="hero__title">Воробьевский<br> Владислав Игоревич</h2>
                     <p class="hero__subtitle">Остеопат. Мануальный терапевт</p>
@@ -178,7 +186,7 @@
                 </div>
             </div>
 
-            <div class="purpose block">
+            <div class="purpose block" id="profit">
                 <h2 class="purpose__title">Польза для здоровья</h2>
                 <div class="purpose__cards">
                     <div class="purpose__card">
@@ -246,7 +254,8 @@
 
             <div class="gallery block">
                 <div class="gallery__top">
-                    <img class="gallery__image gallery__image_big" src="images/gallery/gallery.png" alt="Фото с галереей">
+                    <img class="gallery__image gallery__image_big" src="images/gallery/gallery.png"
+                        alt="Фото с галереей">
                 </div>
                 <div class="gallery__bottom">
                     <img class="gallery__image" src="images/gallery/gallery.png" alt="Фото с галереей">
@@ -256,6 +265,93 @@
                 </div>
                 <div class="gallery__bottom">
                     <img class="gallery__image" src="images/gallery/gallery.png" alt="Фото с галереей">
+                </div>
+            </div>
+
+            <div class="card-product block" id="products">
+                <div class="card-product__item-text">
+                    <h2 class="card-product__title">Стол для компьютера<br>
+                        FoxGear LIFTISCH FG-ED-55</h2>
+                    <div class="rating card-product__rating">
+                        <div class="rating__stars">
+                            <span class="rating__star"></span>
+                            <span class="rating__star"></span>
+                            <span class="rating__star"></span>
+                            <span class="rating__star"></span>
+                            <span class="rating__star"></span>
+                        </div>
+                    </div>
+                    <div class="card-product__subtitle">С электроприводом, QI-зарядкой и USB-портами</div>
+                    <div class="card-product__price">49 990 р
+                        <span class="card-product__priceold">59 990 р</span>
+                    </div>
+                    <div class="card-product__buttons">
+                        <button class="button card-product__button-buy" type="button">
+                            <span class="button__text">Купить</span>
+                        </button>
+                        <a class="button button_details" href="https://foxgear.store/pages/fg-ed-55/">
+                            <span class="button__text">Подробнее</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-product__item-image">
+                    <img class="card-product__image" src="images/product/table.jpg"
+                        alt="Стол для компьютера FoxGear LIFTISCH FG-ED-55"
+                        title="Стол для компьютера FoxGear LIFTISCH FG-ED-55">
+                    </img>
+                </div>
+            </div>
+
+            <div class="card-product block">
+                <div class="card-product__item-text">
+                    <h2 class="card-product__title">Офисное кресло<br>
+                        FoxGear NETZ XO</h2>
+                    <div class="rating card-product__rating">
+                        <div class="rating__stars">
+                            <span class="rating__star"></span>
+                            <span class="rating__star"></span>
+                            <span class="rating__star"></span>
+                            <span class="rating__star"></span>
+                            <span class="rating__star"></span>
+                        </div>
+                    </div>
+                    <div class="card-product__subtitle">Эргономичное офисное кресло с автоматической поддержкой поясницы
+                    </div>
+                    <div class="card-product__price">34 990 р
+                        <span class="card-product__priceold">36 990 р</span>
+                    </div>
+                    <div class="card-product__buttons">
+                        <button class="button card-product__button-buy" type="button">
+                            <span class="button__text">Купить</span>
+                        </button>
+                        <a class="button button_details" href="https://foxgear.store/fg-netz-xo.html">
+                            <span class="button__text">Подробнее</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-product__item-image">
+                    <img class="card-product__image" src="images/product/armchair.jpg"
+                        alt="Стол для компьютера FoxGear LIFTISCH FG-ED-55"
+                        title="Стол для компьютера FoxGear LIFTISCH FG-ED-55">
+                    </img>
+                </div>
+            </div>
+
+            <div class="card-combo" id="combo">
+                <div class="card-combo__product card-combo__product_1">
+                    <img class="card-combo__image" src="images/product/table.jpg" alt="Стол FoxGear Liftisch">
+                </div>
+                <div class="card-combo__card">
+                    <h3 class="card-combo__title">Купить эргономичное рабочее место</h3>
+                    <div class="card-combo__price">84 980 р.
+                        <span class="card-combo__priceold">99 990 р.</span>
+                    </div>
+                    <button class="button button_white button_buy" type="button">
+                        <span class="button__text">Купить</span>
+                    </button>
+                </div>
+                <div class="card-combo__product card-combo__product_2">
+                    <img class="card-combo__image" src="images/product/armchair.jpg" alt="Кресло FoxGear NETZ XO">
                 </div>
             </div>
 
@@ -281,8 +377,13 @@
                         </a>
                     </li>
                     <li class="menu-main__item">
-                        <a class="menu-main__link" href="#photos" title="Продукция">
+                        <a class="menu-main__link" href="#products" title="Продукция">
                             Продукция
+                        </a>
+                    </li>
+                    <li class="menu-main__item">
+                        <a class="menu-main__link" href="#combo" title="Продукция">
+                            Рабочее место
                         </a>
                     </li>
                 </ul>

@@ -1,0 +1,178 @@
+.card-combo {
+    display: grid;
+    grid-template-columns: 220px auto 220px;
+    grid-template-areas: "product-1 card product-2";
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 24px;
+
+    color: var(--white, #FFFFFF);
+    font-family: var(--text-family, sans-serif);
+
+    background-color: var(--purple, #E5087F);
+    background-image: -webkit-linear-gradient(left, var(--purple, #E5087F), var(--navy, #502A84));
+    background-image: -moz-linear-gradient(left, var(--purple, #E5087F), var(--navy, #502A84));
+    background-image: linear-gradient(to right, var(--purple, #E5087F), var(--navy, #502A84));
+
+    background-repeat: no-repeat;
+
+    border-radius: var(--border-radius, 12px);
+
+    overflow: hidden;
+}
+
+.card-combo__title {
+    margin-top: 0;
+    margin-bottom: 44px;
+    margin-left: clamp(10px, calc(10px + (20 - 10) * ((100vw - 768px) / (1440 - 768))), 20px);
+    margin-right: clamp(10px, calc(10px + (20 - 10) * ((100vw - 768px) / (1440 - 768))), 20px);
+
+    font-size: var(--text-size-block-title, 32px);
+    font-weight: var(--text-weight-bold, 600);
+
+    line-height: 1.3;
+}
+
+
+.card-combo__product {
+    width: 220px;
+}
+
+.card-combo__product_1 {
+    grid-area: product-1;
+    
+    padding-top: 75px;
+}
+
+.card-combo__product_2 {
+    grid-area: product-2;
+    
+    padding-bottom: 75px;
+}
+
+.card-combo__card {
+    grid-area: card;
+    text-align: center;
+}
+
+.button_white {
+    display: inline-block;
+}
+
+.card-combo__price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+
+    font-size: 26px;
+    font-weight: var(--text-weight-bold, 600);
+
+    line-height: 1;
+}
+
+.card-combo__priceold {
+    margin-left: 14px;
+
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 21px;
+    font-weight: var(--text-weight-main, 500);
+
+    text-decoration: line-through;
+
+    line-height: 1.15;
+}
+
+.card-combo__item-image {
+    width: 43%;
+}
+
+.card-combo__image {
+    display: block;
+    width: 100%;
+    height: auto;
+
+    line-height: 0;
+
+    border-radius: var(--border-radius-flex, 12px);
+}
+
+@media (max-width: 1024px) {
+
+    .card-combo__title {
+        font-size: 24px;
+    }
+
+    .card-combo__rating {
+        margin-bottom: 10px;
+    }
+
+    .card-combo__subtitle {
+        margin-bottom: 30px;
+
+        font-size: 16px;
+    }
+
+    .card-combo__price {
+        margin-bottom: 30px;
+
+        font-size: 20px;
+    }
+
+    .card-combo__priceold {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-combo {
+        grid-template-columns: auto;
+        grid-template-areas: "product-1 product-2" "card card";
+        gap: 20px;
+        padding: 20px;
+        
+
+        font-size: 16px;
+
+        line-height: 24px;
+    }
+
+    .card-combo__product {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .card-combo__product_1 {
+        padding-top: 0;
+    }
+
+    .card-combo__product_2 {
+        padding-bottom: 0;
+    }
+
+    .card-combo__item-text {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .card-combo__title {
+        margin: 0 0 18px 0;
+
+        font-size: 20px;
+    }
+
+    .card-combo__subtitle {
+        margin-bottom: 20px;
+    }
+
+    .card-combo__price {
+        margin-bottom: 20px;
+    }
+
+    .card-combo__item-image {
+        width: 100%;
+        max-width: 100%;
+    }
+}

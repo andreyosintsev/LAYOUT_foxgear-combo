@@ -33,7 +33,10 @@ body {
 }
 
 .block {
+    position: relative;
+
     margin-bottom: 64px;
+    scroll-margin-top: 145px;
 }
 
 @media screen and (max-width: 1440px) {
@@ -49,6 +52,10 @@ body {
 @media screen and (max-width: 1024px) {
     .main {
         padding-top: 100px;
+    }
+
+    .block {
+        scroll-margin-top: 80px;
     }
 }
 

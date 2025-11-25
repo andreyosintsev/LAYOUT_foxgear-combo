@@ -17,6 +17,8 @@ header.navigation {
 }
 
 footer.navigation {
+    position: static;
+
     border-top: 1px solid var(--gray-light, #D8D8D8);
 }
 
@@ -35,7 +37,7 @@ footer.navigation {
 }
 
 .logo {
-    margin-right: 64px;
+    margin-right: clamp(15px, -169.5px + 18.03vw, 90px);
 }
 
 @media screen and (max-width: 1024px) {
