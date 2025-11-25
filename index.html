@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="blocks/rating/css/rating.css">
     <link rel="stylesheet" href="blocks/card-product/css/card-product.css">
     <link rel="stylesheet" href="blocks/card-combo/css/card-combo.css">
+    <link rel="stylesheet" href="blocks/popup/css/popup.css">
 
     <link rel="stylesheet" href="css/index.css">
 
@@ -54,10 +55,7 @@
     <link rel="stylesheet" href="blocks/block-youtube/css/block-youtube.css">
     <link rel="stylesheet" href="blocks/youtube-videos/css/youtube-videos.css">
     <link rel="stylesheet" href="blocks/footer/css/footer.css">
-    <link rel="stylesheet" href="blocks/back-to-top/css/back-to-top.css">
-    <link rel="stylesheet" href="blocks/popup/css/popup.css"-->
-
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="blocks/back-to-top/css/back-to-top.css"-->
 </head>
 
 <body>
@@ -92,7 +90,7 @@
                     </li>
                 </ul>
             </nav>
-            <button class="button button_apply" type="button">
+            <button class="button button_buy" type="button" data-product="Эргономичное рабочее место">
                 <span class="button__text">Оставить заявку</span>
             </button>
             <div class="button-menu-mobile header__button-menu-mobile">
@@ -286,7 +284,7 @@
                         <span class="card-product__priceold">59 990 р</span>
                     </div>
                     <div class="card-product__buttons">
-                        <button class="button card-product__button-buy" type="button">
+                        <button class="button card-product__button-buy button_buy" type="button" data-product="Стол FoxGear LIFTISCH FG-ED-55">
                             <span class="button__text">Купить</span>
                         </button>
                         <a class="button button_details" href="https://foxgear.store/pages/fg-ed-55/">
@@ -321,7 +319,7 @@
                         <span class="card-product__priceold">36 990 р</span>
                     </div>
                     <div class="card-product__buttons">
-                        <button class="button card-product__button-buy" type="button">
+                        <button class="button card-product__button-buy button_buy" type="button" data-product="Офисное кресло FoxGear NETZ XO">
                             <span class="button__text">Купить</span>
                         </button>
                         <a class="button button_details" href="https://foxgear.store/fg-netz-xo.html">
@@ -346,7 +344,7 @@
                     <div class="card-combo__price">84 980 р.
                         <span class="card-combo__priceold">99 990 р.</span>
                     </div>
-                    <button class="button button_white button_buy" type="button">
+                    <button class="button button_white button_buy" type="button" data-product="Эргономичное рабочее место">
                         <span class="button__text">Купить</span>
                     </button>
                 </div>
@@ -388,7 +386,7 @@
                     </li>
                 </ul>
             </nav>
-            <button class="button button_apply" type="button">
+            <button class="button button_buy" type="button" data-product="Эргономичное рабочее место">
                 <span class="button__text">Оставить заявку</span>
             </button>
             <div class="button-menu-mobile header__button-menu-mobile">
@@ -417,8 +415,8 @@
                 <input class="button form__button" type="submit" value="Отправить">
                 <div class="form__offer">
                     Нажимая кнопку &ldquo;Отправить&rdquo;<br>
-                    вы соглашаетесь с <a class="form__link" href="/agreement.html" title="Текст публичной оферты"
-                        target="_blank">публичной офертой</a>
+                    вы соглашаетесь с <br><a class="form__link" href="https://foxgear.store/agreement.html" title="Текст Пользовательского Соглашения"
+                        target="_blank">Пользовательским соглашением</a>
                 </div>
             </div>
         </form>
@@ -476,6 +474,7 @@
     <!-- /Yandex.Metrika counter -->
 
     <script src="scripts/video.js"></script>
+    <script src="scripts/popup.js"></script>
 </body>
 
 </html>

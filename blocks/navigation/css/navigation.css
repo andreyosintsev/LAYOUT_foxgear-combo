@@ -40,6 +40,10 @@ footer.navigation {
     margin-right: clamp(15px, -169.5px + 18.03vw, 90px);
 }
 
+.button-menu-mobile {
+    flex: 0 0 auto;
+}
+
 @media screen and (max-width: 1024px) {
     .navigation {
         padding: 0;
@@ -53,5 +57,9 @@ footer.navigation {
 @media screen and (max-width: 768px) {
     .navigation__wrapper {
         padding: 0 20px;
+    }
+
+    footer.navigation .button-menu-mobile {
+        display: none;
     }
 }
