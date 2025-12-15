@@ -26,13 +26,13 @@ document.addEventListener('DOMContentLoaded', () => {
     menuLinks.forEach(link => link.addEventListener('click', hideMenuMobile));
 
     function showMenuMobile() {
-        menuMobileButton.classList.add('menu-mobile-button_close');
+        menuMobileButton.classList.add('button-menu-mobile_active');
         menuMobile.classList.remove('hidden');
         body.classList.add('noscroll');
     }
 
     function hideMenuMobile() {
-        menuMobileButton.classList.remove('menu-mobile-button_close');
+        menuMobileButton.classList.remove('button-menu-mobile_active');
         menuMobile.classList.add('hidden');
         body.classList.remove('noscroll');
     }
