@@ -28,8 +28,9 @@
     overflow: hidden;
 }
 
+
 .card-purpose__video {
-    padding: 10px;
+    padding: 12px;
 
     background-color: var(--white, #FFFFFF);
     border-radius: 50%;

@@ -76,7 +76,7 @@
 }
 
 .hero__p {
-    margin: 44px 0 0;
+    margin: 44px 0;
 }
 
 .hero__image {
@@ -116,7 +116,7 @@
     }
 
     .hero__p {
-        margin: 24px 0 0;
+        margin: 24px 0 16px;
     }
 
     .hero__image {
